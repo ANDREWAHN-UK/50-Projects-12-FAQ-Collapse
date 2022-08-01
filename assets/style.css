@@ -54,7 +54,7 @@ h1 {
     color: #3498db;
     top: -10px;
     left: -30px;
-    transform: rotateX(180);
+    transform: rotateY(180deg);
 }
 
 .faq-title {
