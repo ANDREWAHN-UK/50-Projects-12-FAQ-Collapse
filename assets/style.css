@@ -32,7 +32,7 @@ h1 {
 }
 
 .faq.active {
-    background-color: rgb(195, 196, 131);
+    background-color: rgb(218, 201, 111);
     box-shadow: 0 3px 6px rgba(207, 201, 140, 0.1),
         0 3px 6px rgba(0, 0, 0, 0.1);
 }
@@ -41,4 +41,31 @@ h1 {
 .faq.active::after {
     content: '\f075';
     font-family: 'Font Awesome 5 Free';
+    color: #2ecc71;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.faq.active::before{
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180);
+}
+
+.faq-title{
+    margin: 0 35px 0 0;
+}
+
+.faq-text{
+    display: none;
+    margin: 30px 0 0;
+}
+
+.faq.active .faq-text{
+    display: block;
 }
